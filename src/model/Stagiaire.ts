@@ -13,5 +13,11 @@ export class Stagiaire extends Person{
         super(prenom, nom, genre, religion);
     }
 
-    //Ajouter toString ???
+    /**
+     * toString()
+     */
+    toString(): string{
+        console.log('tostring()');
+        return this.nom+' '+this.prenom;
+    }
 }

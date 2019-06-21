@@ -10,8 +10,7 @@ function main(){
         [new Certification('java 8',2019)],
         'alexandre',
         'meur',
-        Genre.H,
-        Religion.Atheist
+        Genre.H
     );
 
     console.log(alex.toString());

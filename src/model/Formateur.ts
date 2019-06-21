@@ -19,4 +19,12 @@ export class Formateur extends Person{
     canTeach(){
         return this.connaissances.filter( con => con.anneeExperience >= 2);
     }
+
+    /**
+     * toString()
+     */
+    toString(): string{
+        console.log('tostring()');
+        return this.nom+' '+this.prenom;
+    }
 }

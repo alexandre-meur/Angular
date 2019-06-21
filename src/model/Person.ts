@@ -9,7 +9,7 @@ export class Person{
         public nom:string,
         public genre:Genre,
         private religion?:Religion
-    ) {};
+    ) {this.toString = toString};
 
 
     /**
@@ -25,7 +25,7 @@ export class Person{
     /**
      * toString()
      */
-    public toString(): string{
+    toString(): string{
         console.log('tostring()');
         return this.nom+' '+this.prenom;
     }
